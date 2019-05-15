@@ -1,5 +1,9 @@
 package exercises;
 
+import java.util.Scanner;
+
+import javax.swing.JOptionPane;
+
 import voce.SpeechSynthesizer;
 
 /**
@@ -14,17 +18,19 @@ import voce.SpeechSynthesizer;
 public class SpeakAndSpell {
 
 	public static void main(String[] args) {
-		// 1. Use the speak method to say the word. "e.g. spell mandlebrot"
-
-		// 2. Catch the user's answer in a String
-
-		// 3. If the user spelled the word correctly, speak "correct"
-
-		// 4. Otherwise say "wrong"
-
-		// 5. Repeat the process for other words
+		Scanner scanner = new Scanner(System.in);
 		
-		// 6. Calculate the user's score and give it to them at the end of the game 
+        System.out.println("Spell the next word!");  
+		speak("mandlebrot");
+	
+          String answer = scanner.nextLine();
+      
+	
+       if (answer.equals("mandlebrot")) {speak("Correct.");
+       }
+       else {speak("Wrong!");
+       }
+      
 		
 		
 	}
