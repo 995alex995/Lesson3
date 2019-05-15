@@ -1,5 +1,7 @@
 package exercises;
 
+import javax.swing.JOptionPane;
+
 /**
  * Fizz Buzz
  * 
@@ -17,5 +19,28 @@ package exercises;
 
 public class FizzBuzz {
 	
-
+public static void main(String[] args) {
+	
+		String buzz =  "buzz"; String fizz = "fizz";
+		for (int i = 1; i <= 20; i++) {
+		
+		
+		if (i % 15 == 0) 
+		{
+		  System.out.println(buzz + fizz);
+		}
+		else if (i % 5  == 0 )
+		{
+		  System.out.println(buzz);
+		}
+		else if (i % 3  == 0)
+		{
+		  System.out.println(fizz);
+		}
+		else {System.out.println(i);}
+		}
+		}
+	  
+				
 }
+
